@@ -1,0 +1,128 @@
+/*Universal Style*/
+
+body {
+    background-color: #ffa07a;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    color: #ffff00;
+}
+
+
+/*nav*/
+
+nav {
+    background-color: #008080;
+    padding-top: 0.625em;
+    padding-bottom: 0.0625em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+nav ul li a {
+    padding: 0.625em;
+    text-decoration: none;
+    color: #ffa07a;
+}
+
+
+/*Header*/
+
+h1 {
+    text-align: center;
+    background-color: #80513e;
+    color: #ff7f50;
+    padding: 1.25em 0;
+    opacity: 95%;
+    margin: 6.5em 0px;
+}
+
+
+/*Banner*/
+
+.banner {
+    margin-bottom: 3.125em;
+}
+
+.banner p {
+    color: white;
+}
+
+
+/*gallery*/
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 1.19em;
+}
+
+
+/*quote*/
+
+.quote {
+    background-color: #008080;
+    color: #ffff00;
+    margin: 3.125em 0;
+    padding: 1.25em 0.625em 5.625em;
+}
+
+
+/*meetup*/
+
+.meetUp {
+    text-align: center;
+}
+
+.meetUp img {
+    width: 50%;
+}
+
+
+/*small version*/
+
+@media only screen and (max-width: 1048px) {
+    .gallery {
+        display: block;
+    }
+    .gallery img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    h1 {
+        margin: 2em 0em;
+    }
+    header {
+        max-height: 6.5em;
+    }
+    .gallery img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 2em;
+    }
+    .gallery img {
+        width: 100%;
+    }
+}
